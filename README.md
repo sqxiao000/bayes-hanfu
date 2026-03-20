@@ -1,7 +1,11 @@
 # Classify Traditional Chinese Women's Clothing by Dynasty
 ### Bayes Machine Learning to classify traditional chinese clothing by a distribution of the dynasty it's from
 
-The goal of this project is to work with two things I really like! Bayes' Theorem and Traditional Chinese clothing. First I will have to preprocess my own data and perform image compression before I can get to the classification part.
+The goal of this project is to work with two things I really like! Bayes' Theorem and Traditional Chinese clothing. I will preprocess my own dataset and perform image compression before I can get to the classification part.
+
+## Background
+Bayes Theorem, a classic foundational theorem in statistics for conditional probability and a personal favourite of mine is the engine for the classifier.
+
 
 Before working on my dataset I want to outline what the major clothing evolution timeline was for Chinese women in history, and what those eras of clothing were best defined by.
 
