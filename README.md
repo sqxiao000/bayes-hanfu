@@ -1,13 +1,30 @@
-# Classify Traditional Chinese Women's Clothing by Dynasty
-### Bayes Machine Learning to classify traditional chinese clothing by a distribution of the dynasty it's from
+# Classify Women's Hanfu by Dynasty
+### Bayes Machine Learning to classify traditional chinese clothing by time period
 
-The goal of this project is to work with two things I really like! Bayes' Theorem and Traditional Chinese clothing. I will preprocess my own dataset and perform image compression before I can get to the classification part.
+In this project I want to work with two things I really like! Probability and Traditional Chinese clothing. I will preprocess my own dataset and perform image compression before I can get to the classification part, which will be supervised learning with Bayesian networks.
+
+Hanfu (汉服) is traditional chinese clothing that has been worn since the 2nd millennium BCE and has a long history of evolution. It's best defined by a robe structure with upper and lower garments, and different accessories.
 
 ## Background
-Bayes Theorem, a classic foundational theorem in statistics for conditional probability and a personal favourite of mine is the engine for the classifier.
+Bayes Theorem, a foundational theorem in statistics for conditional probability and a personal favourite of mine, is the engine for this classifier. This is mathematically defined by 
 
+### P(A∣B) = P(B∣A)*P(A)/P(B) 
+where
 
-Before working on my dataset I want to outline what the major clothing evolution timeline was for Chinese women in history, and what those eras of clothing were best defined by.
+* Posterior Probability P(A∣B) is the updated probability of hypothesis A after observing evidence B
+* Likelihood P(B∣A) is the probability of observing evidence B assuming hypothesis A is true.
+* Prior Probability P(A) is the initial belief about hypothesis A before observing any evidence.
+* Evidence (Marginal Likelihood) P(B) is the total probability of observing evidence B acting as a normalization factor.
+
+For the purpose of this project we will need to use Bayes Theorem for Multiple Hypotheses (n Events):
+
+Let E1, E2,…, En be a set of events associated with the sample space S, in which all the events E1, E2,…, En have a non-zero probability of occurrence. All the events E1, E2,…, E form a partition of S. Let A be an event in space S for which we have to find the probability, then according to Bayes theorem,
+
+### P(Ei|A) = P(Ei)*P(A|Ei)/SUM(P(Ek)*P(A|Ek))
+
+for k = 1, 2, 3, …., n
+
+Below is an outline of hanfu's evolution for Chinese women in history, and what the major eras of clothing are best defined by.
 
 ### Qin Han Dynasty (221–206 BCE) (206 BCE–220 CE)
 The Qin Han dynasty introduced a unified dress code of robe-based structures, best characterized by:
@@ -16,13 +33,15 @@ The Qin Han dynasty introduced a unified dress code of robe-based structures, be
 * Fabric sashes for women
 * Gender-neutral silhouettes
 
+<img src="han.png" alt="drawing" width="200"/>
+
 ### Wei Jin Dynasty (220–265) (266–420) 
 The Wei Jin era is defined by philisophical freedom, shifting to a more elegant and simplistic fashion characterized by:
 * Loose tops with wide cuffs
 * Minimal embroidery, emphasis on color and drape
 * Light, flowing skirts
 
-### Sui Dynasty (581-618)
+<img src="weijin.png" alt="drawing" width="200"/>
 
 ### Tang Dynasty (618-906)
 The Tang Dynasty emphasized prosperity, and openness. Fashion was expressive and bold, characterized by:
@@ -36,14 +55,27 @@ The Song Dynasty sees a big shift to simplicity and practicality, characterized 
 * Beizi: straight-cut overcoat with side slits
 * Introduction of (百迭裙) pleated skirt with layered folds
 * Gender-neutral clothing
+* Grace and elegance
 
-### Yuan Dynasty (1279-1368)
+<img src="song.png" alt="drawing" width="200"/>
 
 ### Ming Dynasty (1368-1644)
 The Ming Dynasty saw a shift back to traditional styles, characterized by:
 * Short upper jacket (袄) with pipa sleeves
 * High-waisted pleated skirt (马面裙)
 * Floral or animal embroidery
-* Rich colors and heavy brocade
+* Rich radiant colors and heavy brocade
 
-### Qing Dynasty (1644-1912)
+<img src="ming.png" alt="drawing" width="200"/>
+
+### Qing Dynasty (1644–1911)
+The Qing Dynasty, founded by the Northeast saw a change to the traditional cut, defined by:
+* Arrow sleeves, short top with robe skirt
+* Bold embroidery on bright fabrics
+* Straight silhouette, high Pi collars
+* Focus on hair accessories and updo
+
+
+## Dataset
+
+For the dataset of this project, I will be collecting my own set of images and labelling each image by dynasty. 
