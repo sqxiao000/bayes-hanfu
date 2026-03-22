@@ -60,7 +60,7 @@ The Song Dynasty sees a big shift to simplicity and practicality, characterized 
 * Gender-neutral clothing
 * Grace and elegance
 
-<img src="references/song.png" alt="drawing" height="250"/>
+<img src="references/song.png" alt="drawing" height="250"/><img src="references/song2.jpg" alt="drawing" height="250"/><img src="references/song3.jpg" alt="drawing" height="250"/>
 
 ### Ming Dynasty (1368-1644)
 The Ming Dynasty saw a shift back to traditional styles, characterized by:
@@ -69,14 +69,17 @@ The Ming Dynasty saw a shift back to traditional styles, characterized by:
 * Floral or animal embroidery
 * Rich radiant colors and heavy brocade
 
-<img src="references/ming.png" alt="drawing" height="250"/>
+<img src="references/ming.jpg" alt="drawing" height="250"/><img src="references/ming.png" alt="drawing" height="250"/><img src="references/ming3.jpg" alt="drawing" height="250"/>
+
+
 
 ### Qing Dynasty (1644–1911)
 The Qing Dynasty, founded by the Northeast saw a change to the traditional cut, defined by:
 * Arrow sleeves, short top with robe skirt
 * Bold embroidery on bright fabrics
 * Straight silhouette, high Pi collars
-* Focus on hair accessories and updo
+
+<img src="references/qing.jpg" alt="drawing" height="250"/><img src="references/qing4.jpg" alt="drawing" height="250"/><img src="references/qing3.jpg" alt="drawing" height="250"/>
 
 
 ## Dataset
