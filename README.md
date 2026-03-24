@@ -84,4 +84,4 @@ The Qing Dynasty, founded by the Northeast saw a change to the traditional cut, 
 
 ## Dataset
 
-For the dataset of this project, I will be collecting my own set of images and labelling each image by dynasty. 
+For the dataset of this project, I will be collecting my own set of images and labelling each image by dynasty. Specifically full-body images of one person in the frame, facing the front or sides.
