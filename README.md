@@ -72,16 +72,6 @@ The Ming Dynasty saw a shift back to traditional styles, characterized by:
 <img src="references/ming.jpg" alt="drawing" height="250"/><img src="references/ming.png" alt="drawing" height="250"/><img src="references/ming3.jpg" alt="drawing" height="250"/>
 
 
-
-### Qing Dynasty (1644–1911)
-The Qing Dynasty, founded by the Northeast saw a change to the traditional cut, defined by:
-* Arrow sleeves, short top with robe skirt
-* Bold embroidery on bright fabrics
-* Straight silhouette, high Pi collars
-
-<img src="references/qing.jpg" alt="drawing" height="250"/><img src="references/qing4.jpg" alt="drawing" height="250"/><img src="references/qing3.jpg" alt="drawing" height="250"/>
-
-
 ## Dataset
 
 For the dataset of this project, I will be collecting my own set of images and labelling each image by dynasty. Specifically full-body images of one person in the frame, facing the front or sides.
